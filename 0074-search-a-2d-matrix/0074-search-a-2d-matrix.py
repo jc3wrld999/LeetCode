@@ -11,8 +11,5 @@ class Solution:
                 return False
             else:
                 continue
-            # i = bisect_left(m, target)
-            # if m[i] == target:
-            #     return True
         return False
         
