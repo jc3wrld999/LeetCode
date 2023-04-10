@@ -4,7 +4,7 @@ class Solution:
         resLen = 0
 
         for i in range(len(s)):
-            # 짝수
+            # 홀수
             l, r = i, i
             # 같은 동안 루프문
             while l >= 0 and r < len(s) and s[l] == s[r]:
@@ -14,7 +14,7 @@ class Solution:
                     resLen = r - l + 1
                 l -= 1
                 r += 1
-            # 홀수
+            # 짝수
             l, r = i, i + 1
             # 같은 동안 루프문
             while l >= 0 and r < len(s) and s[l] == s[r]:
