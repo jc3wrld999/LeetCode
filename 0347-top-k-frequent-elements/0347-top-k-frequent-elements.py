@@ -13,4 +13,3 @@ class Solution(object):
                 res.append(j)
                 if len(res) == k:
                     return res
-        return res
