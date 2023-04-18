@@ -16,7 +16,7 @@ class Solution(object):
                 res.append(v)
                 if dfs(v): return True
                 adj[src].insert(i, v)
-                res.pop()
+                print(res.pop())
             return False
         dfs("JFK")
         return res
