@@ -14,11 +14,10 @@ class Solution:
             cnt = 1
             for r1, c1 in [(1, 0), (-1, 0), (0, 1), (0, -1)]:
                 r2, c2 = r + r1, c + c1
-
                 cnt = max(cnt, 1 + move(r2, c2, matrix[r][c]))
 
             memo[(r, c)] = cnt
-            return memo[(r, c)]
+            return cnt
         
         for r in range(L):
             for c in range(M):
