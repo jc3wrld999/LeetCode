@@ -19,10 +19,10 @@ class Solution:
 
             memo[(r, c)] = cnt
             return memo[(r, c)]
-        max_cnt = 0
+        
         for r in range(L):
             for c in range(M):
-                max_cnt = max(move(r, c, -1), max_cnt)
-        return max_cnt
+                move(r, c, -1)
+        return max(memo.values())
                     
         
